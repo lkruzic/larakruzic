@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LaraNails — Kontakt</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-kontakt.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ZAGLAVLJE -->
+<header class="main-frame about-header" role="banner">
+<div class="frame-inner">
+
+  <!-- LOGO -->
+  <div class="logo-wrap">
+    <img class="logo-img about-logo" src="logotip.svg" alt="LaraNails logo">
+  </div>
+
+  <!-- NASLOV -->
+  <div class="center-content about-center">
+    <div class="center-inner about-center-inner">
+      <h1 class="site-title about-title">Kontakt</h1>
+    </div>
+  </div>
+
+  <!-- NAVIGACIJA -->
+  <div class="nav-floating">
+    <div class="nav-wrap">
+      <input type="checkbox" id="nav-toggle-kontakt" class="nav-toggle">
+      <label for="nav-toggle-kontakt" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav-menu">
+        <a href="index.html">Početna</a>
+        <a href="o-nama.html">O nama</a>
+        <a href="o-nama.html#usluge">Usluge</a>
+        <a href="cjenik.html">Cjenik</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </div>
+
+</div>
+</header>
+
+  <!-- DEKORATIVNI SEPARATOR -->
+  <div class="decor-sep">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,40 C240,0 480,80 720,40 C960,0 1200,80 1440,40 L1440,80 L0,80 Z" fill="#fff"></path>
+    </svg>
+  </div>
+
+<!-- KONTAKT SEKCIJA -->
+<section class="contact-section">
+<div class="contact-grid">
+
+  <!-- LIJEVI BLOK -->
+  <div class="contact-info">
+    <h2>Javite nam se!</h2>
+    <br>
+    <p>Tvoji nokti zaslužuju pažnju, a ti zaslužuješ trenutak samo za sebe.</p>
+    <p>Za sve upite, informacije o uslugama ili rezervaciju termina, slobodno nam se obrati.</p>
+    <p>Radujemo se tvojoj poruci!</p>
+    <br>
+    <div class="info-line">
+      <strong>Telefon:</strong> <span>+385 91 9268 532</span>
+    </div>
+    <div class="info-line">
+      <strong>Instagram:</strong> <span>lara_nails</span>
+    </div>
+    <div class="info-line">
+      <strong>Facebook:</strong> <span>LaraNails.studio</span>
+    </div>
+  </div>
+
+  <!-- DESNI BLOK — REZERVACIJA TERMINA -->
+  <div class="contact-form">
+    <h2>Rezervacija termina</h2>
+    <br>
+  <form>
+    <label>Ime i prezime</label>
+    <input type="text" placeholder="Vaše ime" required>
+    <label>Email</label>
+    <input type="email" placeholder="Vaš email" required>
+    <label>Datum</label>
+    <input type="date" required>
+    <label>Vrijeme</label>
+    <input type="time" required>
+    <label>Poruka</label>
+    <textarea placeholder="Dodatne informacije (nije obavezno)"></textarea>
+    <button type="submit" class="submit-btn">Potvrdi</button>
+  </form>
+  </div>
+
+</div>
+</section>
+
+  <!-- SEPARATOR PRIJE PODNOŽJA -->
+  <div class="section-divider fancy">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,60 C300,0 600,120 900,60 C1200,0 1440,120 1440,60 L1440,120 L0,120 Z" fill="#ffffff"></path>
+    </svg>
+  </div>
+
+  <!-- PODNOŽJE -->
+  <footer class="footer">
+    <div class="container">
+      <p>Radno vrijeme: prema dogovoru</p>
+      <br>
+      <p>© 2026 LaraNails</p>
+    </div>
+  </footer>
+
+  <!-- POZADINSKA SLIKA -->
+  <script>
+    const bg = document.body.dataset.bg;
+    if (bg) document.body.style.backgroundImage = `url("${bg}")`;
+  </script>
+
+</body>
+</html>

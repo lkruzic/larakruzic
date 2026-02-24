@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LaraNails — Galerija</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-galerija.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ZAGLAVLJE -->
+<header class="main-frame about-header" role="banner">
+<div class="frame-inner">
+
+  <!-- LOGO -->
+  <div class="logo-wrap">
+    <img class="logo-img about-logo" src="logotip.svg" alt="LaraNails logo">
+  </div>
+
+  <!-- NASLOV -->
+  <div class="center-content about-center">
+    <div class="center-inner about-center-inner">
+      <h1 class="site-title about-title">Galerija</h1>
+    </div>
+  </div>
+
+  <!-- NAVIGACIJA -->
+  <div class="nav-floating">
+    <div class="nav-wrap">
+      <input type="checkbox" id="nav-toggle-galerija" class="nav-toggle">
+      <label for="nav-toggle-galerija" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav-menu">
+        <a href="index.html">Početna</a>
+        <a href="o-nama.html">O nama</a>
+        <a href="o-nama.html#usluge">Usluge</a>
+        <a href="cjenik.html">Cjenik</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </div>
+
+</div>
+</header>
+
+  <!-- DEKORATIVNI SEPARATOR -->
+  <div class="decor-sep">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,40 C240,0 480,80 720,40 C960,0 1200,80 1440,40 L1440,80 L0,80 Z" fill="#fff"></path>
+    </svg>
+  </div>
+
+  <!-- GALERIJA -->
+  <section class="gallery-section">
+    <div class="gallery-grid">
+
+      <!-- 17 slika — 6 + 6 + 5 -->
+      <img src="galerija nokti 1.jpeg" alt="">
+      <img src="galerija nokti 2.jpeg" alt="">
+      <img src="galerija nokti 3.jpeg" alt="">
+      <img src="galerija nokti 4.jpeg" alt="">
+      <img src="galerija nokti 5.jpeg" alt="">
+      <img src="galerija nokti 6.jpeg" alt="">
+
+      <img src="galerija nokti 7.jpeg" alt="">
+      <img src="galerija nokti 8.jpeg" alt="">
+      <img src="galerija nokti 9.jpeg" alt="">
+      <img src="galerija nokti 10.jpeg" alt="">
+      <img src="galerija nokti 11.jpeg" alt="">
+      <img src="galerija nokti 12.jpeg" alt="">
+
+      <img src="galerija nokti 13.jpeg" alt="">
+      <img src="galerija nokti 14.jpeg" alt="">
+      <img src="galerija nokti 15.jpeg" alt="">
+      <img src="galerija nokti 16.jpeg" alt="">
+      <img src="galerija nokti 17.jpeg" alt="">
+
+    </div>
+  </section>
+
+  <!-- SEPARATOR PRIJE PODNOŽJA -->
+  <div class="section-divider fancy">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,60 C300,0 600,120 900,60 C1200,0 1440,120 1440,60 L1440,120 L0,120 Z" fill="#ffffff"></path>
+    </svg>
+  </div>
+
+  <!-- PODNOŽJE -->
+  <footer class="footer">
+    <div class="container">
+      <p>Radno vrijeme: prema dogovoru</p>
+      <br>
+      <p>© 2026 LaraNails</p>
+    </div>
+  </footer>
+
+  <!-- POZADINSKA SLIKA -->
+  <script>
+    const bg = document.body.dataset.bg;
+    if (bg) document.body.style.backgroundImage = `url("${bg}")`;
+  </script>
+
+</body>
+</html>

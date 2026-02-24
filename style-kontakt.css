@@ -1,0 +1,117 @@
+.about-logo {
+  height: 400px;
+  display: block;
+  margin: 0 auto;}
+
+.about-center .about-center-inner {
+  display: flex;
+  align-items: flex-end; 
+  justify-content: center;
+  min-height: 160px; 
+  padding-bottom: 20px; }
+
+.about-title {
+  font-size: 60px;
+  color: var(--rose-strong);
+  margin: 0;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;}
+
+.nav-floating {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 9999;}
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  z-index: -1;}
+
+.contact-section {
+  background: #f7d6e5; 
+  padding: 60px 0 80px 0;}
+.contact-grid {
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;}
+
+.contact-info h2 {
+  font-size: 36px;
+  color: var(--rose-strong);
+  margin-bottom: 12px;
+  font-family: 'Times New Roman', serif;}
+.contact-info p {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', serif;}
+
+.info-line {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #333;
+  font-family: 'Times New Roman', serif;}
+.info-line strong {
+  color: var(--rose-strong);}
+
+.contact-form h2 {
+  font-size: 36px;
+  color: var(--rose-strong);
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', serif;}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;}
+.contact-form label {
+  font-size: 18px;
+  color: #333;
+  font-family: 'Times New Roman', serif;}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  font-size: 18px;
+  font-family: 'Times New Roman', serif;
+  background: #fff;}
+.contact-form textarea {
+  height: 120px;
+  resize: none;}
+
+.submit-btn {
+  margin-top: 10px;
+  padding: 12px 20px;
+  background: var(--rose-strong);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: 'Times New Roman', serif;}
+.submit-btn:hover {
+  background: #b83a6e;}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }}
