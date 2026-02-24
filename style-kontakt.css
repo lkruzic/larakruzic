@@ -112,6 +112,16 @@ body::before {
   background: #b83a6e;}
 
 @media (max-width: 900px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }}
+.contact-grid {grid-template-columns: 1fr;}}
+
+@media(max-width:768px){
+.contact-hero{padding:2rem 1rem;text-align:center;}
+.contact-hero .logo-wrap{display:flex;justify-content:center;margin-bottom:0.5rem;}
+.contact-hero .logo-img{height:180px;width:auto;margin:0 auto;}
+.contact-hero h1{text-align:center;font-size:2.2rem;margin:0.5rem auto;}
+.contact-hero .separator{width:40%;margin:0.5rem auto;}
+
+.contact-text{max-width:90%;margin:0.5rem auto 1rem auto;font-size:1rem;text-align:center;}
+
+.contact-form{max-width:90%;margin:0 auto 2rem auto;font-size:1rem;display:flex;flex-direction:column;gap:0.8rem;}
+.contact-form input,.contact-form textarea,.contact-form select,.contact-form button{width:100%;font-size:1rem;padding:0.6rem;border-radius:8px;}}
