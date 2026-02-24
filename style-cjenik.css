@@ -117,28 +117,23 @@ body::before {
   height: 120px;
   display: block;}
 
-@media (max-width: 768px) {
-  .price-container {
-    padding: 22px;
-  }
-  .nav-floating {
-    top: 15px;
-    right: 15px;
-  }
-  .row span {
-    font-size: 14px;
-  }
-  .tab {
-    padding: 10px 16px;
-    font-size: 14px;
-  }}
+@media(max-width:768px){
+.pricing-hero{padding:2rem 1rem;text-align:center;}
+.pricing-hero .logo-wrap{display:flex;justify-content:center;margin-bottom:0.5rem;}
+.pricing-hero .logo-img{height:180px;width:auto;margin:0 auto;}
+.pricing-hero h1{text-align:center;font-size:2.2rem;margin:0.5rem auto;}
+
+.pricing-hero .separator{width:40%;margin:0.5rem auto;}
+
+.pricing-section{background-size:cover;background-position:center;background-repeat:no-repeat;padding:1rem;}
+
+.price-table-wrapper{width:100%;overflow-x:auto;margin-top:1rem;}
+.price-table{width:100%;font-size:0.9rem;border-collapse:collapse;background:rgba(255,255,255,0.85);border-radius:12px;}
+.price-table th,.price-table td{padding:0.5rem;text-align:center;border-bottom:1px solid #ccc;}
+.price-table th{background:#f7d4e3;color:#333;font-weight:700;}
+.price-table tr:last-child td{border-bottom:none;}}
+
 @media (max-width: 420px) {
-  .row {
-    flex-direction: column;
-    text-align: center;
-    gap: 6px;
-  }
-  .tab {
-    width: 100%;
-    text-align: center;
-  }}
+  .row {flex-direction: column;text-align: center;gap: 6px;}
+  .tab {width: 100%;text-align: center;}}
+
